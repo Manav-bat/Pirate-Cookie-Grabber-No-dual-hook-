@@ -1,20 +1,17 @@
-# Pirate Cookie Grabber
-
-**I Am not responsible for any malicious use of this program**
+SOOO the original github get term (i think) and a skid guy added a dualhook to this roblox grabber i just removed it
 
 
-Pirate Cookie grabber, The most Over-powered cookie logger in github 🤯 
-# Discord Server
 
-https://discord.gg/xBKYjyJJgN (UPDATED INV)
+Appolon#2523 (i will not pub your discord kid)
 
 ![image](https://user-images.githubusercontent.com/60432696/190850577-26a82220-9774-42c5-beb5-479aa5ee71e1.png)
 
 # Tutorial
-https://www.youtube.com/watch?v=3AcHtJxKao4
+https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 # Feautres
-	🟢Grabs Cookie from (Edge,opera,chrome,etc.)
+        🟢Removed the second webhook 
+        🟢Sends Account age to webhook
 	🟢Sends Robux Balance to webhook
 	🟢Sends Premium Status to webhook
 	🟢Sends Roblox Username to webhook
@@ -22,8 +19,3 @@ https://www.youtube.com/watch?v=3AcHtJxKao4
 	🟢Sends RAP to webhook
 	🟢Sends Creation date to webhook
 	🟢Sends Account age to webhook
-	🟣NOT DETECTED BY WINDOWS DEFENDER AND SOME OTHER ANTI VIRUSES
-# To Do
-	💎Add Token Grabber
-	💎Add EXE version Builder
-	💎Add Password Stealer
