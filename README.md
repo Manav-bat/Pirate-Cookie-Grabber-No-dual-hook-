@@ -1,6 +1,6 @@
 SOOO the original github get term (i think) and a skid guy added a dualhook to this roblox grabber i just removed it
 
-
+**AND THIS IS FOR EDUCATION ONLY**
 
 Appolon#2523 (i will not pub your discord kid)
 
